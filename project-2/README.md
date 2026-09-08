@@ -32,35 +32,44 @@ The analysis followed a structured Exploratory Data Analysis (EDA) process using
 
 **Recommendations:** Translated the findings into practical recommendations for interpreting transaction values, investigating high-value purchases, and maintaining transaction validation controls.
 
+# Descriptive Statistics
+
+<img width="828" height="206" alt="image" src="https://github.com/user-attachments/assets/6aeda8d2-4164-45ab-ae36-43895c66db7d" />
+
+**Insight:**
+TotalPrice had the greatest variability, with a mean of 1,053.97 compared with a median of 823.62, indicating that higher-value transactions influenced the average. Other variables were more closely centered around their typical values, providing a clearer view of normal purchasing behavior.
+
+
 # Distribution Analysis
 
 <img width="761" height="421" alt="image" src="https://github.com/user-attachments/assets/9ddd172d-f5d4-4aec-b379-cfea5c13a9fd" />
 
-Insight:
+**Insight:**
 Purchases were concentrated around 2–4 units, indicating that most transactions involved relatively small quantities. Inventory and purchasing strategies could prioritize typical purchase volumes while still accounting for higher-quantity transactions.
 
 <img width="762" height="421" alt="image" src="https://github.com/user-attachments/assets/70389e7a-a0ab-416b-95b9-a462ec569b54" />
 
-Insight:
+**Insight:**
 Prices distributed broadly across the available range, indicating variation in the prices of products purchased. This suggested that transaction value was influenced by a range of pricing levels, making pricing an important area to examine when understanding customer spending.
 
 <img width="763" height="419" alt="image" src="https://github.com/user-attachments/assets/0e12ba4c-1986-4a13-a043-430eb43c8596" />
 
+**Insight:**
 Most transactions contained around 4–7 items, with fewer transactions at the lower and upper ends. This provided a useful indication of typical basket size and supported opportunities to examine what factors were associated with larger carts.
 
 <img width="761" height="421" alt="image" src="https://github.com/user-attachments/assets/759ace61-8b91-4065-9573-528219b121d4" />
 
-Insight:
+**Insight:**
 Transactions concentrated at lower values and fewer transactions extending toward much higher values. The average transaction value could be influenced substantially by a smaller number of high-value purchases, so relying on the mean alone could give a misleading picture of typical customer spending.
 
 <img width="761" height="418" alt="image" src="https://github.com/user-attachments/assets/4f8446b5-5e2c-450f-86a1-d3519b59d48d" />
 
-Insight:
+**Insight:**
 The histogram followed the same distribution as TotalPrice. This reinforced confidence that the calculated transaction values were consistent with the recorded values.
 
 <img width="771" height="420" alt="image" src="https://github.com/user-attachments/assets/34c056cb-2d8b-44e8-a888-c1d63c113249" />
 
-Insight:
+**Insight:**
 Values concentrated effectively at zero. Business impact: This indicated that recorded transaction totals were internally consistent, reducing concerns about calculation discrepancies affecting the analysis.
 
 # Outlier Analysis
@@ -72,14 +81,14 @@ Values concentrated effectively at zero. Business impact: This indicated that re
 <img width="578" height="421" alt="image" src="https://github.com/user-attachments/assets/78bf3816-4562-423f-8db2-c4995e7b0f70" />
 <img width="578" height="421" alt="image" src="https://github.com/user-attachments/assets/4d9593df-072f-48da-a167-e1ab5a74e6e1" />
 
-Insight:
+**Insight:**
 The boxplots showed that TotalPrice had the most significant extreme observations, with 27.9% flagged by the IQR method, highlighting substantial variation in transaction values. The high proportion of ItemsInCart (44.4%) and Quantity (18.1%) flags largely represented higher-volume purchasing behavior rather than clear errors.
 
 # Correlation Analysis
 
 <img width="759" height="488" alt="image" src="https://github.com/user-attachments/assets/a90b0a03-86b2-4a6d-9324-346fa62f7abc" />
 
-Insight:
+**Insight:**
 UnitPrice (r = 0.72) and Quantity (r = 0.62) showed the strongest relationships with TotalPrice, indicating that pricing and purchase volume were strongly associated with transaction value. However, correlation does not imply causation; the analysis identified relationships between variables but did not establish that changes in UnitPrice or Quantity directly caused changes in TotalPrice.
 
 # Key Findings
