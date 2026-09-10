@@ -64,8 +64,11 @@ The dataset was assessed for:
 ## Technologies Used
 
 Python – Data cleaning and analysis
+
 Pandas – Data manipulation and quality checks
+
 NumPy – Numerical validation
+
 Jupyter Notebook – Interactive analysis and documentation
   
 
